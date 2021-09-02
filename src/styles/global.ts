@@ -1,0 +1,19 @@
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #__next {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+  }
+
+  input, textarea {
+    font-family: 'Roboto', sans-serif;
+  }
+`
