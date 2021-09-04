@@ -9,7 +9,9 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "storybook": "start-storybook -s './public' -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*": [
@@ -25,7 +27,12 @@
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.4",
     "@babel/preset-typescript": "^7.15.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/react": "^6.3.7",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
@@ -35,6 +42,7 @@
     "@types/styled-components": "5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
+    "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.12.1",
     "eslint-config-standard": "^16.0.3",
@@ -47,6 +55,7 @@
     "jest": "^27.1.0",
     "jest-styled-components": "^7.0.5",
     "lint-staged": "^11.1.2",
+    "storybook-dark-mode": "^1.0.8",
     "typescript": "4.2.4"
   }
 }
