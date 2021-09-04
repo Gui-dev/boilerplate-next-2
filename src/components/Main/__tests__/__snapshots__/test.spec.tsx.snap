@@ -32,6 +32,7 @@ exports['<Main /> should render the heading 1'] = `
 .c2 {
   font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .c3 {
@@ -61,7 +62,9 @@ exports['<Main /> should render the heading 1'] = `
   <h2
     class="c3"
   >
-    Typescript, ReactJS, NextJS e Styled Components
+    Typescript, ReactJS, NextJS, Styled Components,
+    <br />
+    Jest, Testing Library React, Storybook, Husky
   </h2>
   <img
     alt="Um desenvolvedor de frente para a tela com código"
